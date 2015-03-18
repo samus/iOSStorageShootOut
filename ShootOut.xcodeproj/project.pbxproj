@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		095125791AB92B9F00D95B2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 095125781AB92B9F00D95B2A /* main.m */; };
+		0951257C1AB92B9F00D95B2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0951257B1AB92B9F00D95B2A /* AppDelegate.m */; };
+		0951257F1AB92B9F00D95B2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0951257E1AB92B9F00D95B2A /* ViewController.m */; };
+		095125821AB92B9F00D95B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095125801AB92B9F00D95B2A /* Main.storyboard */; };
+		095125841AB92B9F00D95B2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095125831AB92B9F00D95B2A /* Images.xcassets */; };
+		095125871AB92B9F00D95B2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 095125851AB92B9F00D95B2A /* LaunchScreen.xib */; };
+		095125931AB92B9F00D95B2A /* FMDBShootOutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 095125921AB92B9F00D95B2A /* FMDBShootOutTests.m */; };
+		09E755441AB9226200220D44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E755431AB9226200220D44 /* main.m */; };
+		09E755471AB9226200220D44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E755461AB9226200220D44 /* AppDelegate.m */; };
+		09E7554A1AB9226200220D44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E755491AB9226200220D44 /* ViewController.m */; };
+		09E7554D1AB9226200220D44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E7554B1AB9226200220D44 /* Main.storyboard */; };
+		09E7554F1AB9226200220D44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E7554E1AB9226200220D44 /* Images.xcassets */; };
+		09E755521AB9226200220D44 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09E755501AB9226200220D44 /* LaunchScreen.xib */; };
+		09E7555E1AB9226200220D44 /* YAPShootOutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E7555D1AB9226200220D44 /* YAPShootOutTests.m */; };
+		48422D133E04B042282A9C47 /* libPods-YAPShootOut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A4C468D5E48DE7E34ABDC3 /* libPods-YAPShootOut.a */; };
+		BD44555359E05F38075FA7A9 /* libPods-FMDBShootOut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D59BEE5DB911339B69681F43 /* libPods-FMDBShootOut.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0951258D1AB92B9F00D95B2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09E755361AB9226200220D44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 095125731AB92B9F00D95B2A;
+			remoteInfo = FMDBShootOut;
+		};
+		09E755581AB9226200220D44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09E755361AB9226200220D44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09E7553D1AB9226200220D44;
+			remoteInfo = YAPShootOut;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		095125741AB92B9F00D95B2A /* FMDBShootOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMDBShootOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		095125771AB92B9F00D95B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		095125781AB92B9F00D95B2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0951257A1AB92B9F00D95B2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0951257B1AB92B9F00D95B2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0951257D1AB92B9F00D95B2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0951257E1AB92B9F00D95B2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		095125811AB92B9F00D95B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		095125831AB92B9F00D95B2A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		095125861AB92B9F00D95B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0951258C1AB92B9F00D95B2A /* FMDBShootOutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMDBShootOutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		095125911AB92B9F00D95B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		095125921AB92B9F00D95B2A /* FMDBShootOutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBShootOutTests.m; sourceTree = "<group>"; };
+		09E7553E1AB9226200220D44 /* YAPShootOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YAPShootOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09E755421AB9226200220D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09E755431AB9226200220D44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09E755451AB9226200220D44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		09E755461AB9226200220D44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		09E755481AB9226200220D44 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		09E755491AB9226200220D44 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		09E7554C1AB9226200220D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09E7554E1AB9226200220D44 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		09E755511AB9226200220D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		09E755571AB9226200220D44 /* YAPShootOutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YAPShootOutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09E7555C1AB9226200220D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09E7555D1AB9226200220D44 /* YAPShootOutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAPShootOutTests.m; sourceTree = "<group>"; };
+		8A30060F9C53920C8CC3CBE7 /* Pods-YAPShootOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAPShootOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YAPShootOut/Pods-YAPShootOut.debug.xcconfig"; sourceTree = "<group>"; };
+		95A4C468D5E48DE7E34ABDC3 /* libPods-YAPShootOut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YAPShootOut.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4116E40B1193CACA7D2177 /* Pods-FMDBShootOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBShootOut.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMDBShootOut/Pods-FMDBShootOut.release.xcconfig"; sourceTree = "<group>"; };
+		B6845A351F9524B99E069831 /* Pods-FMDBShootOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBShootOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMDBShootOut/Pods-FMDBShootOut.debug.xcconfig"; sourceTree = "<group>"; };
+		D59BEE5DB911339B69681F43 /* libPods-FMDBShootOut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FMDBShootOut.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABD193C3AF80A795C0CC73E /* Pods-YAPShootOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAPShootOut.release.xcconfig"; path = "Pods/Target Support Files/Pods-YAPShootOut/Pods-YAPShootOut.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		095125711AB92B9F00D95B2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD44555359E05F38075FA7A9 /* libPods-FMDBShootOut.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095125891AB92B9F00D95B2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09E7553B1AB9226200220D44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48422D133E04B042282A9C47 /* libPods-YAPShootOut.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09E755541AB9226200220D44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		095125751AB92B9F00D95B2A /* FMDBShootOut */ = {
+			isa = PBXGroup;
+			children = (
+				0951257A1AB92B9F00D95B2A /* AppDelegate.h */,
+				0951257B1AB92B9F00D95B2A /* AppDelegate.m */,
+				0951257D1AB92B9F00D95B2A /* ViewController.h */,
+				0951257E1AB92B9F00D95B2A /* ViewController.m */,
+				095125801AB92B9F00D95B2A /* Main.storyboard */,
+				095125831AB92B9F00D95B2A /* Images.xcassets */,
+				095125851AB92B9F00D95B2A /* LaunchScreen.xib */,
+				095125761AB92B9F00D95B2A /* Supporting Files */,
+			);
+			path = FMDBShootOut;
+			sourceTree = "<group>";
+		};
+		095125761AB92B9F00D95B2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				095125771AB92B9F00D95B2A /* Info.plist */,
+				095125781AB92B9F00D95B2A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0951258F1AB92B9F00D95B2A /* FMDBShootOutTests */ = {
+			isa = PBXGroup;
+			children = (
+				095125921AB92B9F00D95B2A /* FMDBShootOutTests.m */,
+				095125901AB92B9F00D95B2A /* Supporting Files */,
+			);
+			path = FMDBShootOutTests;
+			sourceTree = "<group>";
+		};
+		095125901AB92B9F00D95B2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				095125911AB92B9F00D95B2A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09E755351AB9226200220D44 = {
+			isa = PBXGroup;
+			children = (
+				09E755401AB9226200220D44 /* YAPShootOut */,
+				09E7555A1AB9226200220D44 /* YAPShootOutTests */,
+				095125751AB92B9F00D95B2A /* FMDBShootOut */,
+				0951258F1AB92B9F00D95B2A /* FMDBShootOutTests */,
+				09E7553F1AB9226200220D44 /* Products */,
+				86A08A1D75C20C6A46091B50 /* Pods */,
+				6CC5BF2E377021CE27283768 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		09E7553F1AB9226200220D44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09E7553E1AB9226200220D44 /* YAPShootOut.app */,
+				09E755571AB9226200220D44 /* YAPShootOutTests.xctest */,
+				095125741AB92B9F00D95B2A /* FMDBShootOut.app */,
+				0951258C1AB92B9F00D95B2A /* FMDBShootOutTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09E755401AB9226200220D44 /* YAPShootOut */ = {
+			isa = PBXGroup;
+			children = (
+				09E755451AB9226200220D44 /* AppDelegate.h */,
+				09E755461AB9226200220D44 /* AppDelegate.m */,
+				09E755481AB9226200220D44 /* ViewController.h */,
+				09E755491AB9226200220D44 /* ViewController.m */,
+				09E7554B1AB9226200220D44 /* Main.storyboard */,
+				09E7554E1AB9226200220D44 /* Images.xcassets */,
+				09E755501AB9226200220D44 /* LaunchScreen.xib */,
+				09E755411AB9226200220D44 /* Supporting Files */,
+			);
+			path = YAPShootOut;
+			sourceTree = "<group>";
+		};
+		09E755411AB9226200220D44 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09E755421AB9226200220D44 /* Info.plist */,
+				09E755431AB9226200220D44 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09E7555A1AB9226200220D44 /* YAPShootOutTests */ = {
+			isa = PBXGroup;
+			children = (
+				09E7555D1AB9226200220D44 /* YAPShootOutTests.m */,
+				09E7555B1AB9226200220D44 /* Supporting Files */,
+			);
+			path = YAPShootOutTests;
+			sourceTree = "<group>";
+		};
+		09E7555B1AB9226200220D44 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09E7555C1AB9226200220D44 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CC5BF2E377021CE27283768 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95A4C468D5E48DE7E34ABDC3 /* libPods-YAPShootOut.a */,
+				D59BEE5DB911339B69681F43 /* libPods-FMDBShootOut.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86A08A1D75C20C6A46091B50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A30060F9C53920C8CC3CBE7 /* Pods-YAPShootOut.debug.xcconfig */,
+				DABD193C3AF80A795C0CC73E /* Pods-YAPShootOut.release.xcconfig */,
+				B6845A351F9524B99E069831 /* Pods-FMDBShootOut.debug.xcconfig */,
+				AC4116E40B1193CACA7D2177 /* Pods-FMDBShootOut.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		095125731AB92B9F00D95B2A /* FMDBShootOut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 095125981AB92B9F00D95B2A /* Build configuration list for PBXNativeTarget "FMDBShootOut" */;
+			buildPhases = (
+				BB945CECB4F78180584AF967 /* Check Pods Manifest.lock */,
+				095125701AB92B9F00D95B2A /* Sources */,
+				095125711AB92B9F00D95B2A /* Frameworks */,
+				095125721AB92B9F00D95B2A /* Resources */,
+				2BF3B2605DB1C8E4E220DEEA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMDBShootOut;
+			productName = FMDBShootOut;
+			productReference = 095125741AB92B9F00D95B2A /* FMDBShootOut.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0951258B1AB92B9F00D95B2A /* FMDBShootOutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 095125991AB92B9F00D95B2A /* Build configuration list for PBXNativeTarget "FMDBShootOutTests" */;
+			buildPhases = (
+				095125881AB92B9F00D95B2A /* Sources */,
+				095125891AB92B9F00D95B2A /* Frameworks */,
+				0951258A1AB92B9F00D95B2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0951258E1AB92B9F00D95B2A /* PBXTargetDependency */,
+			);
+			name = FMDBShootOutTests;
+			productName = FMDBShootOutTests;
+			productReference = 0951258C1AB92B9F00D95B2A /* FMDBShootOutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09E7553D1AB9226200220D44 /* YAPShootOut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09E755611AB9226200220D44 /* Build configuration list for PBXNativeTarget "YAPShootOut" */;
+			buildPhases = (
+				1861F3F2327AE93ABCBA48B8 /* Check Pods Manifest.lock */,
+				09E7553A1AB9226200220D44 /* Sources */,
+				09E7553B1AB9226200220D44 /* Frameworks */,
+				09E7553C1AB9226200220D44 /* Resources */,
+				BA002CDEEFC433656354F2AC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YAPShootOut;
+			productName = YAPShootOut;
+			productReference = 09E7553E1AB9226200220D44 /* YAPShootOut.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09E755561AB9226200220D44 /* YAPShootOutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09E755641AB9226200220D44 /* Build configuration list for PBXNativeTarget "YAPShootOutTests" */;
+			buildPhases = (
+				09E755531AB9226200220D44 /* Sources */,
+				09E755541AB9226200220D44 /* Frameworks */,
+				09E755551AB9226200220D44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09E755591AB9226200220D44 /* PBXTargetDependency */,
+			);
+			name = YAPShootOutTests;
+			productName = YAPShootOutTests;
+			productReference = 09E755571AB9226200220D44 /* YAPShootOutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09E755361AB9226200220D44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Synapptic Labs";
+				TargetAttributes = {
+					095125731AB92B9F00D95B2A = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					0951258B1AB92B9F00D95B2A = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 095125731AB92B9F00D95B2A;
+					};
+					09E7553D1AB9226200220D44 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					09E755561AB9226200220D44 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 09E7553D1AB9226200220D44;
+					};
+				};
+			};
+			buildConfigurationList = 09E755391AB9226200220D44 /* Build configuration list for PBXProject "ShootOut" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09E755351AB9226200220D44;
+			productRefGroup = 09E7553F1AB9226200220D44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09E7553D1AB9226200220D44 /* YAPShootOut */,
+				09E755561AB9226200220D44 /* YAPShootOutTests */,
+				095125731AB92B9F00D95B2A /* FMDBShootOut */,
+				0951258B1AB92B9F00D95B2A /* FMDBShootOutTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		095125721AB92B9F00D95B2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095125821AB92B9F00D95B2A /* Main.storyboard in Resources */,
+				095125871AB92B9F00D95B2A /* LaunchScreen.xib in Resources */,
+				095125841AB92B9F00D95B2A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0951258A1AB92B9F00D95B2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09E7553C1AB9226200220D44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E7554D1AB9226200220D44 /* Main.storyboard in Resources */,
+				09E755521AB9226200220D44 /* LaunchScreen.xib in Resources */,
+				09E7554F1AB9226200220D44 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09E755551AB9226200220D44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1861F3F2327AE93ABCBA48B8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2BF3B2605DB1C8E4E220DEEA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMDBShootOut/Pods-FMDBShootOut-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA002CDEEFC433656354F2AC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YAPShootOut/Pods-YAPShootOut-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB945CECB4F78180584AF967 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		095125701AB92B9F00D95B2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0951257F1AB92B9F00D95B2A /* ViewController.m in Sources */,
+				0951257C1AB92B9F00D95B2A /* AppDelegate.m in Sources */,
+				095125791AB92B9F00D95B2A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095125881AB92B9F00D95B2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095125931AB92B9F00D95B2A /* FMDBShootOutTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09E7553A1AB9226200220D44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E7554A1AB9226200220D44 /* ViewController.m in Sources */,
+				09E755471AB9226200220D44 /* AppDelegate.m in Sources */,
+				09E755441AB9226200220D44 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09E755531AB9226200220D44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E7555E1AB9226200220D44 /* YAPShootOutTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0951258E1AB92B9F00D95B2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 095125731AB92B9F00D95B2A /* FMDBShootOut */;
+			targetProxy = 0951258D1AB92B9F00D95B2A /* PBXContainerItemProxy */;
+		};
+		09E755591AB9226200220D44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09E7553D1AB9226200220D44 /* YAPShootOut */;
+			targetProxy = 09E755581AB9226200220D44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		095125801AB92B9F00D95B2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				095125811AB92B9F00D95B2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		095125851AB92B9F00D95B2A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				095125861AB92B9F00D95B2A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		09E7554B1AB9226200220D44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09E7554C1AB9226200220D44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09E755501AB9226200220D44 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09E755511AB9226200220D44 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		095125941AB92B9F00D95B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6845A351F9524B99E069831 /* Pods-FMDBShootOut.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FMDBShootOut/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		095125951AB92B9F00D95B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC4116E40B1193CACA7D2177 /* Pods-FMDBShootOut.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FMDBShootOut/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		095125961AB92B9F00D95B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FMDBShootOutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMDBShootOut.app/FMDBShootOut";
+			};
+			name = Debug;
+		};
+		095125971AB92B9F00D95B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FMDBShootOutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMDBShootOut.app/FMDBShootOut";
+			};
+			name = Release;
+		};
+		09E7555F1AB9226200220D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09E755601AB9226200220D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09E755621AB9226200220D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A30060F9C53920C8CC3CBE7 /* Pods-YAPShootOut.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YAPShootOut/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09E755631AB9226200220D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DABD193C3AF80A795C0CC73E /* Pods-YAPShootOut.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YAPShootOut/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		09E755651AB9226200220D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YAPShootOutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YAPShootOut.app/YAPShootOut";
+			};
+			name = Debug;
+		};
+		09E755661AB9226200220D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YAPShootOutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YAPShootOut.app/YAPShootOut";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		095125981AB92B9F00D95B2A /* Build configuration list for PBXNativeTarget "FMDBShootOut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095125941AB92B9F00D95B2A /* Debug */,
+				095125951AB92B9F00D95B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		095125991AB92B9F00D95B2A /* Build configuration list for PBXNativeTarget "FMDBShootOutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095125961AB92B9F00D95B2A /* Debug */,
+				095125971AB92B9F00D95B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09E755391AB9226200220D44 /* Build configuration list for PBXProject "ShootOut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09E7555F1AB9226200220D44 /* Debug */,
+				09E755601AB9226200220D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09E755611AB9226200220D44 /* Build configuration list for PBXNativeTarget "YAPShootOut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09E755621AB9226200220D44 /* Debug */,
+				09E755631AB9226200220D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09E755641AB9226200220D44 /* Build configuration list for PBXNativeTarget "YAPShootOutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09E755651AB9226200220D44 /* Debug */,
+				09E755661AB9226200220D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09E755361AB9226200220D44 /* Project object */;
+}
