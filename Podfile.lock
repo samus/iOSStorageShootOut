@@ -1,4 +1,5 @@
 PODS:
+  - CHCSVParser (2.1.0)
   - CocoaLumberjack (1.9.2):
     - CocoaLumberjack/Extensions (= 1.9.2)
   - CocoaLumberjack/Core (1.9.2)
@@ -21,12 +22,14 @@ PODS:
     - YapDatabase/common
 
 DEPENDENCIES:
+  - CHCSVParser (~> 2.1)
   - FMDB (~> 2.5)
   - objc-rlite (~> 0.0)
   - Realm (~> 0.91)
   - YapDatabase (~> 2.5)
 
 SPEC CHECKSUMS:
+  CHCSVParser: 1ebc9783114707e2b6f83b20fe0f246eb2fabae0
   CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
   FMDB: 0efa188cf0dd1ce82c27a478cd5f5fa245308677
   objc-rlite: 522b39ecaf9fd4b64f2111206e797ab6976cd0f1

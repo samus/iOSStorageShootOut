@@ -2,6 +2,8 @@ platform :ios, '8.0'
 
 workspace 'ShootOut'
 
+pod 'CHCSVParser', '~> 2.1'
+
 target 'YAPShootOut' do
 	pod 'YapDatabase', '~> 2.5'
 end

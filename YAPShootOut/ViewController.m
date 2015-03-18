@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PostParser.h"
 
 @interface ViewController ()
 
@@ -18,10 +19,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)import:(id)sender
+{
+    PostParser *parser = [[PostParser alloc]init];
+    [parser parsePostsWithPostCallBack:^(NSDictionary *post) {
+        NSLog(@"Post: %@", post);
+    }];
 }
+
 
 @end
