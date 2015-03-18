@@ -9,6 +9,10 @@ PODS:
   - FMDB/common (2.5)
   - FMDB/standard (2.5):
     - FMDB/common
+  - objc-rlite (0.0.1.2)
+  - Realm (0.91.1):
+    - Realm/Headers (= 0.91.1)
+  - Realm/Headers (0.91.1)
   - YapDatabase (2.5.4):
     - YapDatabase/standard (= 2.5.4)
   - YapDatabase/common (2.5.4):
@@ -18,11 +22,15 @@ PODS:
 
 DEPENDENCIES:
   - FMDB (~> 2.5)
+  - objc-rlite (~> 0.0)
+  - Realm (~> 0.91)
   - YapDatabase (~> 2.5)
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
   FMDB: 0efa188cf0dd1ce82c27a478cd5f5fa245308677
+  objc-rlite: 522b39ecaf9fd4b64f2111206e797ab6976cd0f1
+  Realm: 81adfc7f43f9301f40bbc46d5e8a10aaf71b9504
   YapDatabase: c1d6912df1b4a160f7373ee7657d360e29bb00fd
 
 COCOAPODS: 0.36.0
