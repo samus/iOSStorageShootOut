@@ -1,0 +1,50 @@
+Queries
+
+Posts
+
+Select TOP 5000 
+Posts.OwnerUserId
+from Posts 
+Inner join PostTags
+on Posts.Id = PostTags.PostId
+Inner join Tags
+On PostTags.TagId = Tags.id
+Where score >= 0
+And ClosedDate is null
+And Tags.TagName='ios'
+Order by CreationDate Desc
+
+Users
+
+Select Users.Id, Reputation, DisplayName
+From Users
+Inner Join (
+  Select TOP 5000 
+    Posts.OwnerUserId
+  from Posts 
+  Inner join PostTags
+    on Posts.Id = PostTags.PostId
+  Inner join Tags
+    On PostTags.TagId = Tags.id
+  Where score >= 0
+  And ClosedDate is null
+  And Tags.TagName='ios'
+  Order by CreationDate Desc ) As Posts On Posts.OwnerUserId = Users.Id
+
+Tags
+
+Select Distinct Tags.Id, Tags.TagName
+From Tags
+Inner Join PostTags on PostTags.TagId = Tags.Id
+Inner Join (
+  Select TOP 5000 
+    Posts.Id
+  from Posts 
+  Inner join PostTags
+    on Posts.Id = PostTags.PostId
+  Inner join Tags
+    On PostTags.TagId = Tags.id
+  Where score >= 0
+  And ClosedDate is null
+  And Tags.TagName='ios'
+  Order by CreationDate Desc ) As Posts On Posts.Id = PostTags.PostId
