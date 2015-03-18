@@ -32,8 +32,8 @@
     parser.sanitizesFields = YES;
     [parser parse];
 
-    
-    return 1.0;
+    return [self.end timeIntervalSinceDate:self.start];
+
 }
 
 - (void)parserDidBeginDocument:(CHCSVParser *)parser

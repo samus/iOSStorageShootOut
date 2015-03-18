@@ -22,9 +22,10 @@
 - (IBAction)import:(id)sender
 {
     PostParser *parser = [[PostParser alloc]init];
-    [parser parsePostsWithPostCallBack:^(NSDictionary *post) {
-        NSLog(@"Post: %@", post);
+    NSTimeInterval time = [parser parsePostsWithPostCallBack:^(NSDictionary *post) {
+        //Do import here
     }];
+    NSLog(@"Seconds to complete importing, %f", time);
 }
 
 
