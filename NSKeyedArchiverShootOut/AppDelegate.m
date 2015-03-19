@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ShootOutViewController.h"
+#import "NSKeyedArchiverPostDataController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +18,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSKeyedArchiverPostDataController *dc = [[NSKeyedArchiverPostDataController alloc] init];
+    
+    
+    ShootOutViewController *soVc = (ShootOutViewController *) self.window.rootViewController;
+    soVc.postDataController = dc;
+
     // Override point for customization after application launch.
     return YES;
 }
