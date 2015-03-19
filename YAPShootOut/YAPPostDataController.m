@@ -9,6 +9,8 @@
 #import "YAPPostDataController.h"
 #import "YapDatabase.h"
 
+#import "YapDatabaseSecondaryIndex.h"
+
 #import "NSCodingPost.h"
 
 @interface YAPPostDataController ()
@@ -25,10 +27,29 @@
     }
     
     self.database = database;
+    [self setupDatabase];
     self.connection = [database newConnection];
     self.rwconnection = [database newConnection];
     
     return self;
+}
+
+- (void)setupDatabase
+{
+    YapDatabaseSecondaryIndexSetup *scoreSetup = [[YapDatabaseSecondaryIndexSetup alloc] init];
+    [scoreSetup addColumn:@"score" withType:YapDatabaseSecondaryIndexTypeReal];
+    
+    YapDatabaseSecondaryIndexHandler *scoreHandler = [YapDatabaseSecondaryIndexHandler withObjectBlock:^(NSMutableDictionary *dict, NSString *collection, NSString *key, id object) {
+        if ([object isKindOfClass:[NSCodingPost class]]){
+            NSCodingPost *post = (NSCodingPost *)object;
+            
+            [dict setObject:@(post.score) forKey:@"score"];
+        }
+    }];
+    
+    YapDatabaseSecondaryIndex *scoreIndex = [[YapDatabaseSecondaryIndex alloc]initWithSetup:scoreSetup handler:scoreHandler];
+    [self.database registerExtension:scoreIndex withName:@"scoreIndex"];
+    
 }
 
 - (void)importPost:(NSDictionary *)postDict
@@ -45,6 +66,23 @@
         if (completion) {
             completion((NSObject<PostModelProtocol>*)[transaction objectForKey:postId inCollection:@"posts"]);
         }
+    }];
+}
+
+- (void)findPostsWithScoreOver:(NSInteger)score completion:(void (^)(NSArray *))completion
+{
+    if (completion == nil) {
+        return;
+    }
+    [self.connection readWithBlock:^(YapDatabaseReadTransaction *transaction) {
+        NSMutableArray *posts = [[NSMutableArray alloc]init];
+        YapDatabaseQuery *query = [YapDatabaseQuery queryWithFormat:@"WHERE score >= ?", @(score)];
+        [[transaction ext:@"scoreIndex"] enumerateKeysAndObjectsMatchingQuery:query
+                                                            usingBlock:^(NSString *collection, NSString *key, id object, BOOL *stop) {
+                                                                [posts addObject:object];
+                                                            }];
+
+        completion(posts);
     }];
 }
 @end

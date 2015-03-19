@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7515.2" systemVersion="14D105g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Shoot Out View Controller-->
@@ -16,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApC-js-Ke4">
-                                <rect key="frame" x="16" y="36" width="88" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApC-js-Ke4">
+                                <rect key="frame" x="16" y="24" width="88" height="30"/>
                                 <state key="normal" title="Import Posts">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -25,7 +26,7 @@
                                     <action selector="import:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ds3-Oz-vbK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFW-Uy-ZbF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFW-Uy-ZbF">
                                 <rect key="frame" x="16" y="74" width="61" height="30"/>
                                 <state key="normal" title="Get Post">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,23 +35,49 @@
                                     <action selector="getPostTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="78f-M1-nou"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="28717375" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyJ-aH-zfp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28717375" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyJ-aH-zfp">
                                 <rect key="frame" x="92" y="78" width="77" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b9P-qc-5a3">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9P-qc-5a3">
                                 <rect key="frame" x="15" y="107" width="570" height="449"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98H-17-dln">
+                                <rect key="frame" x="15" y="52" width="194" height="30"/>
+                                <state key="normal" title="Num posts with score &gt;= 5?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postsScoredAboveTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Fsw-hv-e7w"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="b9P-qc-5a3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="87" id="5dn-Sd-i80"/>
+                            <constraint firstAttribute="centerX" secondItem="b9P-qc-5a3" secondAttribute="centerX" id="76Y-Ky-dfv"/>
+                            <constraint firstItem="98H-17-dln" firstAttribute="top" secondItem="ApC-js-Ke4" secondAttribute="bottom" constant="-2" id="9j3-VY-Vo7"/>
+                            <constraint firstItem="98H-17-dln" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="49" id="Bq5-5X-nfs"/>
+                            <constraint firstItem="ApC-js-Ke4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Ila-CB-Jie"/>
+                            <constraint firstItem="RFW-Uy-ZbF" firstAttribute="centerY" secondItem="vyJ-aH-zfp" secondAttribute="centerY" constant="0.5" id="M5E-sw-tBb"/>
+                            <constraint firstItem="vyJ-aH-zfp" firstAttribute="leading" secondItem="RFW-Uy-ZbF" secondAttribute="trailing" constant="15" id="POY-0l-cVf"/>
+                            <constraint firstItem="98H-17-dln" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Q35-Bl-cul"/>
+                            <constraint firstItem="ApC-js-Ke4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="4" id="T73-0G-XuE"/>
+                            <constraint firstItem="RFW-Uy-ZbF" firstAttribute="leading" secondItem="98H-17-dln" secondAttribute="leading" constant="1" id="cjH-i6-oGf"/>
+                            <constraint firstItem="RFW-Uy-ZbF" firstAttribute="top" secondItem="98H-17-dln" secondAttribute="bottom" constant="-8" id="m2p-K2-Heq"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="b9P-qc-5a3" secondAttribute="bottom" constant="44" id="mlc-Gv-UO8"/>
                             <constraint firstItem="b9P-qc-5a3" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" constant="-30" id="sDf-mn-Iyu"/>
+                            <constraint firstItem="98H-17-dln" firstAttribute="leading" secondItem="ApC-js-Ke4" secondAttribute="leading" constant="-1" id="zP3-om-3mU"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Bq5-5X-nfs"/>
+                                <exclude reference="Q35-Bl-cul"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="bodyWebView" destination="b9P-qc-5a3" id="r0A-Cs-RKr"/>

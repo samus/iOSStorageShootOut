@@ -54,7 +54,7 @@
     }
     
     self.postId = postDict[@"Id"];
-    self.score = [((NSString *)postDict[@"score"]) integerValue];
+    self.score = [((NSString *)postDict[@"Score"]) integerValue];
     self.ownerUserId = postDict[@"OwnerUserId"];
     self.body = postDict[@"Body"];
     self.title = postDict[@"Title"];

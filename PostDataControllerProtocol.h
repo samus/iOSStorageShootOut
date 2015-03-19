@@ -12,4 +12,6 @@
 @protocol PostDataControllerProtocol <NSObject>
 - (void)importPost:(NSDictionary *)postDict;
 - (void)getPostById:(NSString *)postId completion:(void(^)(NSObject<PostModelProtocol>*))completion;
+- (void)findPostsWithScoreOver:(NSInteger)score completion:(void(^)(NSArray *posts))completion;
+
 @end
