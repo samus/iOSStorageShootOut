@@ -8,6 +8,12 @@
 
 #import "AppDelegate.h"
 
+#import "FMDB.h"
+
+#import "ShootOutViewController.h"
+
+#import "FMDBPostDataController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +22,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *dbpath = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"fm.db"];
+    
+    FMDBPostDataController *dc = [[FMDBPostDataController alloc]initWithDatabasePath:dbpath];
+    
+    ShootOutViewController *soVc = (ShootOutViewController *) self.window.rootViewController;
+    soVc.postDataController = dc;
     return YES;
 }
 

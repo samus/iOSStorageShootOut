@@ -73,6 +73,8 @@
 		095126A01ABA429B00D95B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E7554B1AB9226200220D44 /* Main.storyboard */; };
 		095126A11ABA429C00D95B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E7554B1AB9226200220D44 /* Main.storyboard */; };
 		095126A41ABA43CA00D95B2A /* NSCodingPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 095126A31ABA43CA00D95B2A /* NSCodingPost.m */; };
+		096F8E371ABA6C2000C19BD2 /* FMDBPostDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096F8E361ABA6C2000C19BD2 /* FMDBPostDataController.m */; };
+		096F8E381ABA7E8000C19BD2 /* NSCodingPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 095126A31ABA43CA00D95B2A /* NSCodingPost.m */; };
 		09E755441AB9226200220D44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E755431AB9226200220D44 /* main.m */; };
 		09E755471AB9226200220D44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E755461AB9226200220D44 /* AppDelegate.m */; };
 		09E7554A1AB9226200220D44 /* ShootOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E755491AB9226200220D44 /* ShootOutViewController.m */; };
@@ -206,6 +208,8 @@
 		095126921ABA417A00D95B2A /* YAPPostDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAPPostDataController.m; sourceTree = "<group>"; };
 		095126A21ABA43CA00D95B2A /* NSCodingPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSCodingPost.h; path = Common/NSCodingPost.h; sourceTree = SOURCE_ROOT; };
 		095126A31ABA43CA00D95B2A /* NSCodingPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSCodingPost.m; path = Common/NSCodingPost.m; sourceTree = SOURCE_ROOT; };
+		096F8E351ABA6C2000C19BD2 /* FMDBPostDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBPostDataController.h; sourceTree = "<group>"; };
+		096F8E361ABA6C2000C19BD2 /* FMDBPostDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBPostDataController.m; sourceTree = "<group>"; };
 		09E7553E1AB9226200220D44 /* YAPShootOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YAPShootOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E755421AB9226200220D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09E755431AB9226200220D44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -347,6 +351,8 @@
 				0951257B1AB92B9F00D95B2A /* AppDelegate.m */,
 				095125851AB92B9F00D95B2A /* LaunchScreen.xib */,
 				095125761AB92B9F00D95B2A /* Supporting Files */,
+				096F8E351ABA6C2000C19BD2 /* FMDBPostDataController.h */,
+				096F8E361ABA6C2000C19BD2 /* FMDBPostDataController.m */,
 			);
 			path = FMDBShootOut;
 			sourceTree = "<group>";
@@ -1331,7 +1337,9 @@
 			files = (
 				0951257C1AB92B9F00D95B2A /* AppDelegate.m in Sources */,
 				095126871AB9383F00D95B2A /* PostParser.m in Sources */,
+				096F8E381ABA7E8000C19BD2 /* NSCodingPost.m in Sources */,
 				095125791AB92B9F00D95B2A /* main.m in Sources */,
+				096F8E371ABA6C2000C19BD2 /* FMDBPostDataController.m in Sources */,
 				095126961ABA427600D95B2A /* ShootOutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
