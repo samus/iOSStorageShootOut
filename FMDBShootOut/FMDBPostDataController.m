@@ -56,18 +56,14 @@
 
 - (void)findPostsWithScoreOver:(NSInteger)score completion:(void (^)(NSArray *))completion
 {
-    [self.backgroundQueue addOperationWithBlock:^{
-        NSMutableArray *posts = [[NSMutableArray alloc]init];
-        [self.dbQueue inDatabase:^(FMDatabase *db) {
-            NSString *sql = @"SELECT Id, OwnerUserId, Score, Body, Title, Tags FROM Posts WHERE score >= ?";
-            FMResultSet *results = [db executeQuery:sql withArgumentsInArray:@[@(score)]];
-            while ([results next]) {
-                [posts addObject:[self postFromResultSet:results]];
-            }
-        }];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            completion(posts);
-        });
+    NSString *sql = @"SELECT Id, OwnerUserId, Score, Body, Title, Tags FROM Posts WHERE score >= ?";
+    NSMutableArray *posts = [[NSMutableArray alloc]init];
+    [self query:sql parameters:@[@(score)] result:^(FMResultSet *results) {
+        while ([results next]) {
+            [posts addObject:[self postFromResultSet:results]];
+        }
+    } completion:^{
+        completion(posts);
     }];
 }
 
