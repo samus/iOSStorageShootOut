@@ -11,5 +11,5 @@
 
 @protocol PostDataControllerProtocol <NSObject>
 - (void)importPost:(NSDictionary *)postDict;
-- (NSObject<PostModelProtocol>*)getPostById:(NSString *)postId completion:(void(^)(NSObject<PostModelProtocol>*))completion;
+- (void)getPostById:(NSString *)postId completion:(void(^)(NSObject<PostModelProtocol>*))completion;
 @end

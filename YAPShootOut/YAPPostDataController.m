@@ -38,4 +38,13 @@
         [transaction setObject:post forKey:post.postId inCollection:@"posts"];
     }];
 }
+
+- (void)getPostById:(NSString *)postId completion:(void(^)(NSObject<PostModelProtocol>*))completion
+{
+    [self.connection readWithBlock:^(YapDatabaseReadTransaction *transaction) {
+        if (completion) {
+            completion((NSObject<PostModelProtocol>*)[transaction objectForKey:postId inCollection:@"posts"]);
+        }
+    }];
+}
 @end

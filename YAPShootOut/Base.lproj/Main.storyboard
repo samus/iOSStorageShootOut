@@ -25,28 +25,39 @@
                                     <action selector="import:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ds3-Oz-vbK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFW-Uy-ZbF">
+                                <rect key="frame" x="16" y="74" width="61" height="30"/>
+                                <state key="normal" title="Get Post">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getPostTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="78f-M1-nou"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="28717375" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyJ-aH-zfp">
+                                <rect key="frame" x="92" y="78" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b9P-qc-5a3">
+                                <rect key="frame" x="15" y="107" width="570" height="449"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b9P-qc-5a3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="87" id="5dn-Sd-i80"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="b9P-qc-5a3" secondAttribute="bottom" constant="44" id="mlc-Gv-UO8"/>
+                            <constraint firstItem="b9P-qc-5a3" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" constant="-30" id="sDf-mn-Iyu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bodyWebView" destination="b9P-qc-5a3" id="r0A-Cs-RKr"/>
+                        <outlet property="postIdLbl" destination="vyJ-aH-zfp" id="1Kd-e3-zTm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="hI2-eJ-qdW">
-            <objects>
-                <viewController id="uDg-zJ-SDN" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RBt-oV-YYs"/>
-                        <viewControllerLayoutGuide type="bottom" id="7XR-Ss-VWW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hT4-7c-1Wc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p0p-la-d8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
