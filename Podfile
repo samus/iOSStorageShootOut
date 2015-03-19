@@ -19,3 +19,11 @@ end
 target 'RealmShootOut' do
 	pod 'Realm', '~> 0.91'
 end
+
+target 'NSUserDefaultsShootOut' do
+	pod 'CHCSVParser', '~> 2.1'
+end
+
+target 'NSKeyedArchiverShootOut' do
+	pod 'CHCSVParser', '~> 2.1'
+end

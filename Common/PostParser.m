@@ -31,6 +31,8 @@
     parser.delegate = self;
     parser.sanitizesFields = YES;
     [parser parse];
+    
+    
 
     return [self.end timeIntervalSinceDate:self.start];
 

@@ -84,11 +84,16 @@
 		09E7555E1AB9226200220D44 /* YAPShootOutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E7555D1AB9226200220D44 /* YAPShootOutTests.m */; };
 		23E3CA21EDA9075144437B06 /* libPods-RLiteShootOut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 391573917EEFB918D4424F96 /* libPods-RLiteShootOut.a */; };
 		2CBC8E5B4888817DBC6373C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E20B4E5D2D4B1DF382B83F /* libPods.a */; };
+		42D40EE14A114ED03AAA0A42 /* libPods-NSKeyedArchiverShootOut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DC71EDC35307A633301B6F /* libPods-NSKeyedArchiverShootOut.a */; };
 		48422D133E04B042282A9C47 /* libPods-YAPShootOut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A4C468D5E48DE7E34ABDC3 /* libPods-YAPShootOut.a */; };
 		7BD97C4F633340B64B623D08 /* libPods-RealmShootOut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180E2629EE1AC0BAAEFD15E3 /* libPods-RealmShootOut.a */; };
+		979D842370E468F83C4D7ED1 /* libPods-NSUserDefaultsShootOut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCA233377FAD79CD40560CF /* libPods-NSUserDefaultsShootOut.a */; };
 		BD44555359E05F38075FA7A9 /* libPods-FMDBShootOut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D59BEE5DB911339B69681F43 /* libPods-FMDBShootOut.a */; };
+		FA22FE851ABB41840097090F /* NSCodingPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 095126A31ABA43CA00D95B2A /* NSCodingPost.m */; };
 		FAAD258C1ABB02D900E68381 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAD25891ABB02D900E68381 /* Post.m */; };
 		FAAD258D1ABB02D900E68381 /* RealmPostDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAD258B1ABB02D900E68381 /* RealmPostDataController.m */; };
+		FAF96A111ABB284100DB2761 /* NSUserDefaultsPostDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF96A101ABB284100DB2761 /* NSUserDefaultsPostDataController.m */; };
+		FAF96A121ABB284100DB2761 /* NSUserDefaultsPostDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF96A101ABB284100DB2761 /* NSUserDefaultsPostDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +150,7 @@
 
 /* Begin PBXFileReference section */
 		07DA65D9E05AC099DC486D3E /* Pods-RealmShootOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmShootOut.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmShootOut/Pods-RealmShootOut.release.xcconfig"; sourceTree = "<group>"; };
+		0815909E03947559F4E762C0 /* Pods-NSKeyedArchiverShootOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSKeyedArchiverShootOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NSKeyedArchiverShootOut/Pods-NSKeyedArchiverShootOut.debug.xcconfig"; sourceTree = "<group>"; };
 		095125741AB92B9F00D95B2A /* FMDBShootOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMDBShootOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		095125771AB92B9F00D95B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		095125781AB92B9F00D95B2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -227,7 +233,9 @@
 		09E7555D1AB9226200220D44 /* YAPShootOutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAPShootOutTests.m; sourceTree = "<group>"; };
 		180E2629EE1AC0BAAEFD15E3 /* libPods-RealmShootOut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealmShootOut.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		391573917EEFB918D4424F96 /* libPods-RLiteShootOut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RLiteShootOut.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4425B18CA1EA8321E70FA18A /* Pods-NSUserDefaultsShootOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSUserDefaultsShootOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NSUserDefaultsShootOut/Pods-NSUserDefaultsShootOut.debug.xcconfig"; sourceTree = "<group>"; };
 		45E20B4E5D2D4B1DF382B83F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		46837EB10152D55FD60B9FBA /* Pods-NSUserDefaultsShootOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSUserDefaultsShootOut.release.xcconfig"; path = "Pods/Target Support Files/Pods-NSUserDefaultsShootOut/Pods-NSUserDefaultsShootOut.release.xcconfig"; sourceTree = "<group>"; };
 		4F30AC7B309B421E0D41325C /* Pods-RealmShootOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmShootOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmShootOut/Pods-RealmShootOut.debug.xcconfig"; sourceTree = "<group>"; };
 		60772E72E332D049A57838B4 /* Pods-RLiteShootOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RLiteShootOut.release.xcconfig"; path = "Pods/Target Support Files/Pods-RLiteShootOut/Pods-RLiteShootOut.release.xcconfig"; sourceTree = "<group>"; };
 		76CECFFDAAA522563A555979 /* Pods-RLiteShootOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RLiteShootOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RLiteShootOut/Pods-RLiteShootOut.debug.xcconfig"; sourceTree = "<group>"; };
@@ -235,12 +243,17 @@
 		95A4C468D5E48DE7E34ABDC3 /* libPods-YAPShootOut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YAPShootOut.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4116E40B1193CACA7D2177 /* Pods-FMDBShootOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBShootOut.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMDBShootOut/Pods-FMDBShootOut.release.xcconfig"; sourceTree = "<group>"; };
 		B6845A351F9524B99E069831 /* Pods-FMDBShootOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBShootOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMDBShootOut/Pods-FMDBShootOut.debug.xcconfig"; sourceTree = "<group>"; };
+		BFCA233377FAD79CD40560CF /* libPods-NSUserDefaultsShootOut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NSUserDefaultsShootOut.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59BEE5DB911339B69681F43 /* libPods-FMDBShootOut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FMDBShootOut.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABD193C3AF80A795C0CC73E /* Pods-YAPShootOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAPShootOut.release.xcconfig"; path = "Pods/Target Support Files/Pods-YAPShootOut/Pods-YAPShootOut.release.xcconfig"; sourceTree = "<group>"; };
+		EFB9C53A7A115CC71019065F /* Pods-NSKeyedArchiverShootOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSKeyedArchiverShootOut.release.xcconfig"; path = "Pods/Target Support Files/Pods-NSKeyedArchiverShootOut/Pods-NSKeyedArchiverShootOut.release.xcconfig"; sourceTree = "<group>"; };
+		F0DC71EDC35307A633301B6F /* libPods-NSKeyedArchiverShootOut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NSKeyedArchiverShootOut.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAD25881ABB02D900E68381 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		FAAD25891ABB02D900E68381 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		FAAD258A1ABB02D900E68381 /* RealmPostDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmPostDataController.h; sourceTree = "<group>"; };
 		FAAD258B1ABB02D900E68381 /* RealmPostDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmPostDataController.m; sourceTree = "<group>"; };
+		FAF96A0F1ABB284100DB2761 /* NSUserDefaultsPostDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsPostDataController.h; sourceTree = "<group>"; };
+		FAF96A101ABB284100DB2761 /* NSUserDefaultsPostDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsPostDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +320,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979D842370E468F83C4D7ED1 /* libPods-NSUserDefaultsShootOut.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +335,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D40EE14A114ED03AAA0A42 /* libPods-NSKeyedArchiverShootOut.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +526,8 @@
 				095126231AB92E6A00D95B2A /* AppDelegate.m */,
 				0951262D1AB92E6A00D95B2A /* LaunchScreen.xib */,
 				0951261E1AB92E6A00D95B2A /* Supporting Files */,
+				FAF96A0F1ABB284100DB2761 /* NSUserDefaultsPostDataController.h */,
+				FAF96A101ABB284100DB2761 /* NSUserDefaultsPostDataController.m */,
 			);
 			path = NSUserDefaultsShootOut;
 			sourceTree = "<group>";
@@ -714,6 +731,8 @@
 				391573917EEFB918D4424F96 /* libPods-RLiteShootOut.a */,
 				180E2629EE1AC0BAAEFD15E3 /* libPods-RealmShootOut.a */,
 				45E20B4E5D2D4B1DF382B83F /* libPods.a */,
+				F0DC71EDC35307A633301B6F /* libPods-NSKeyedArchiverShootOut.a */,
+				BFCA233377FAD79CD40560CF /* libPods-NSUserDefaultsShootOut.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -729,6 +748,10 @@
 				60772E72E332D049A57838B4 /* Pods-RLiteShootOut.release.xcconfig */,
 				4F30AC7B309B421E0D41325C /* Pods-RealmShootOut.debug.xcconfig */,
 				07DA65D9E05AC099DC486D3E /* Pods-RealmShootOut.release.xcconfig */,
+				0815909E03947559F4E762C0 /* Pods-NSKeyedArchiverShootOut.debug.xcconfig */,
+				EFB9C53A7A115CC71019065F /* Pods-NSKeyedArchiverShootOut.release.xcconfig */,
+				4425B18CA1EA8321E70FA18A /* Pods-NSUserDefaultsShootOut.debug.xcconfig */,
+				46837EB10152D55FD60B9FBA /* Pods-NSUserDefaultsShootOut.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -886,9 +909,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0951263C1AB92E6A00D95B2A /* Build configuration list for PBXNativeTarget "NSUserDefaultsShootOut" */;
 			buildPhases = (
+				90EDE4BC35F53A81DB33145C /* Check Pods Manifest.lock */,
 				095126181AB92E6A00D95B2A /* Sources */,
 				095126191AB92E6A00D95B2A /* Frameworks */,
 				0951261A1AB92E6A00D95B2A /* Resources */,
+				143BBFC8F28CE7C4FC83CD9B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -921,9 +946,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 095126661AB92E8000D95B2A /* Build configuration list for PBXNativeTarget "NSKeyedArchiverShootOut" */;
 			buildPhases = (
+				91BEA2F8053FCE7A6B4116D2 /* Check Pods Manifest.lock */,
 				095126421AB92E8000D95B2A /* Sources */,
 				095126431AB92E8000D95B2A /* Frameworks */,
 				095126441AB92E8000D95B2A /* Resources */,
+				6317F1ACD7053B0254799357 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1042,6 +1069,7 @@
 					};
 					09E7553D1AB9226200220D44 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = X3S2AQ5YSK;
 					};
 					09E755561AB9226200220D44 = {
 						CreatedOnToolsVersion = 6.3;
@@ -1218,6 +1246,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		143BBFC8F28CE7C4FC83CD9B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NSUserDefaultsShootOut/Pods-NSUserDefaultsShootOut-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1861F3F2327AE93ABCBA48B8 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1278,7 +1321,52 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		6317F1ACD7053B0254799357 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NSKeyedArchiverShootOut/Pods-NSKeyedArchiverShootOut-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		888DE3C0080295C39A0D6BB4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90EDE4BC35F53A81DB33145C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91BEA2F8053FCE7A6B4116D2 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1427,7 +1515,9 @@
 			files = (
 				095126241AB92E6A00D95B2A /* AppDelegate.m in Sources */,
 				0951268B1AB9383F00D95B2A /* PostParser.m in Sources */,
+				FA22FE851ABB41840097090F /* NSCodingPost.m in Sources */,
 				095126211AB92E6A00D95B2A /* main.m in Sources */,
+				FAF96A111ABB284100DB2761 /* NSUserDefaultsPostDataController.m in Sources */,
 				0951269A1ABA427B00D95B2A /* ShootOutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1437,6 +1527,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0951263B1AB92E6A00D95B2A /* NSUserDefaultsShootOutTests.m in Sources */,
+				FAF96A121ABB284100DB2761 /* NSUserDefaultsPostDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1829,6 +1920,7 @@
 		};
 		0951263D1AB92E6A00D95B2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4425B18CA1EA8321E70FA18A /* Pods-NSUserDefaultsShootOut.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1843,6 +1935,7 @@
 		};
 		0951263E1AB92E6A00D95B2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46837EB10152D55FD60B9FBA /* Pods-NSUserDefaultsShootOut.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NSUserDefaultsShootOut/Info.plist;
@@ -1887,6 +1980,7 @@
 		};
 		095126671AB92E8000D95B2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0815909E03947559F4E762C0 /* Pods-NSKeyedArchiverShootOut.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1901,6 +1995,7 @@
 		};
 		095126681AB92E8000D95B2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFB9C53A7A115CC71019065F /* Pods-NSKeyedArchiverShootOut.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NSKeyedArchiverShootOut/Info.plist;
@@ -1978,7 +2073,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2014,7 +2109,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -2026,9 +2121,12 @@
 			baseConfigurationReference = 8A30060F9C53920C8CC3CBE7 /* Pods-YAPShootOut.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = YAPShootOut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -2037,9 +2135,12 @@
 			baseConfigurationReference = DABD193C3AF80A795C0CC73E /* Pods-YAPShootOut.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = YAPShootOut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

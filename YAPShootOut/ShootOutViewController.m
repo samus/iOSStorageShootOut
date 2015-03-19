@@ -27,6 +27,13 @@
     NSTimeInterval time = [parser parsePostsWithPostCallBack:^(NSDictionary *post) {
         [self.postDataController importPost:post];
     }];
+    if([self.postDataController respondsToSelector:@selector(finishedImportingPosts)])  {
+        NSDate *methodStart = [NSDate date];
+        [self.postDataController finishedImportingPosts];
+        NSDate *methodFinish = [NSDate date];
+        NSTimeInterval finishTime = [methodFinish timeIntervalSinceDate:methodStart];
+        time+=finishTime;
+    }
     NSLog(@"Seconds to complete importing, %f", time);
 }
 

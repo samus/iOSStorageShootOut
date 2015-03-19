@@ -10,7 +10,11 @@
 #import "PostModelProtocol.h"
 
 @protocol PostDataControllerProtocol <NSObject>
+@required
 - (void)importPost:(NSDictionary *)postDict;
+@optional
+- (void)finishedImportingPosts;
+@required
 - (void)getPostById:(NSString *)postId completion:(void(^)(NSObject<PostModelProtocol>*))completion;
 - (void)findPostsWithScoreOver:(NSInteger)score completion:(void(^)(NSArray *posts))completion;
 - (void)clearAll;
