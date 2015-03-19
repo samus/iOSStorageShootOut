@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "RealmPostDataController.h"
+#import "ShootOutViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    RealmPostDataController *dc = [[RealmPostDataController alloc] init];
+    
+    ShootOutViewController *soVc = (ShootOutViewController *) self.window.rootViewController;
+    soVc.postDataController = dc;
+
     return YES;
 }
 

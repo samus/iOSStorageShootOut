@@ -87,6 +87,8 @@
 		48422D133E04B042282A9C47 /* libPods-YAPShootOut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A4C468D5E48DE7E34ABDC3 /* libPods-YAPShootOut.a */; };
 		7BD97C4F633340B64B623D08 /* libPods-RealmShootOut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180E2629EE1AC0BAAEFD15E3 /* libPods-RealmShootOut.a */; };
 		BD44555359E05F38075FA7A9 /* libPods-FMDBShootOut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D59BEE5DB911339B69681F43 /* libPods-FMDBShootOut.a */; };
+		FAAD258C1ABB02D900E68381 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAD25891ABB02D900E68381 /* Post.m */; };
+		FAAD258D1ABB02D900E68381 /* RealmPostDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAD258B1ABB02D900E68381 /* RealmPostDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -235,6 +237,10 @@
 		B6845A351F9524B99E069831 /* Pods-FMDBShootOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBShootOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMDBShootOut/Pods-FMDBShootOut.debug.xcconfig"; sourceTree = "<group>"; };
 		D59BEE5DB911339B69681F43 /* libPods-FMDBShootOut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FMDBShootOut.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABD193C3AF80A795C0CC73E /* Pods-YAPShootOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAPShootOut.release.xcconfig"; path = "Pods/Target Support Files/Pods-YAPShootOut/Pods-YAPShootOut.release.xcconfig"; sourceTree = "<group>"; };
+		FAAD25881ABB02D900E68381 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		FAAD25891ABB02D900E68381 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		FAAD258A1ABB02D900E68381 /* RealmPostDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmPostDataController.h; sourceTree = "<group>"; };
+		FAAD258B1ABB02D900E68381 /* RealmPostDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmPostDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +429,10 @@
 		095125C91AB92E3400D95B2A /* RealmShootOut */ = {
 			isa = PBXGroup;
 			children = (
+				FAAD25881ABB02D900E68381 /* Post.h */,
+				FAAD25891ABB02D900E68381 /* Post.m */,
+				FAAD258A1ABB02D900E68381 /* RealmPostDataController.h */,
+				FAAD258B1ABB02D900E68381 /* RealmPostDataController.m */,
 				095125CE1AB92E3400D95B2A /* AppDelegate.h */,
 				095125CF1AB92E3400D95B2A /* AppDelegate.m */,
 				095125D91AB92E3400D95B2A /* LaunchScreen.xib */,
@@ -1375,8 +1385,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAD258C1ABB02D900E68381 /* Post.m in Sources */,
 				095125D01AB92E3400D95B2A /* AppDelegate.m in Sources */,
 				095126891AB9383F00D95B2A /* PostParser.m in Sources */,
+				FAAD258D1ABB02D900E68381 /* RealmPostDataController.m in Sources */,
 				095125CD1AB92E3400D95B2A /* main.m in Sources */,
 				095126981ABA427900D95B2A /* ShootOutViewController.m in Sources */,
 			);
