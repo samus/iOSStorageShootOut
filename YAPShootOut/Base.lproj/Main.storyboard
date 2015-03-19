@@ -54,6 +54,15 @@
                                     <action selector="postsScoredAboveTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Fsw-hv-e7w"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aj2-Id-TTN">
+                                <rect key="frame" x="527" y="24" width="58" height="30"/>
+                                <state key="normal" title="Clear All">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearAllTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gn4-mJ-BiT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -62,6 +71,7 @@
                             <constraint firstItem="98H-17-dln" firstAttribute="top" secondItem="ApC-js-Ke4" secondAttribute="bottom" constant="-2" id="9j3-VY-Vo7"/>
                             <constraint firstItem="98H-17-dln" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="49" id="Bq5-5X-nfs"/>
                             <constraint firstItem="ApC-js-Ke4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Ila-CB-Jie"/>
+                            <constraint firstItem="Aj2-Id-TTN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="4" id="JiC-L8-oaY"/>
                             <constraint firstItem="RFW-Uy-ZbF" firstAttribute="centerY" secondItem="vyJ-aH-zfp" secondAttribute="centerY" constant="0.5" id="M5E-sw-tBb"/>
                             <constraint firstItem="vyJ-aH-zfp" firstAttribute="leading" secondItem="RFW-Uy-ZbF" secondAttribute="trailing" constant="15" id="POY-0l-cVf"/>
                             <constraint firstItem="98H-17-dln" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Q35-Bl-cul"/>
@@ -70,6 +80,7 @@
                             <constraint firstItem="RFW-Uy-ZbF" firstAttribute="top" secondItem="98H-17-dln" secondAttribute="bottom" constant="-8" id="m2p-K2-Heq"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="b9P-qc-5a3" secondAttribute="bottom" constant="44" id="mlc-Gv-UO8"/>
                             <constraint firstItem="b9P-qc-5a3" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" constant="-30" id="sDf-mn-Iyu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Aj2-Id-TTN" secondAttribute="trailing" constant="-1" id="tiv-b0-6cC"/>
                             <constraint firstItem="98H-17-dln" firstAttribute="leading" secondItem="ApC-js-Ke4" secondAttribute="leading" constant="-1" id="zP3-om-3mU"/>
                         </constraints>
                         <variation key="default">

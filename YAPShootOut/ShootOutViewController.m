@@ -42,11 +42,16 @@
     }];
 }
 
-- (IBAction)postsScoredAboveTapped:(id)sender {
+- (IBAction)postsScoredAboveTapped:(id)sender
+{
     NSInteger score = 5;
     [self.postDataController findPostsWithScoreOver:score completion:^(NSArray *posts) {
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Number of Posts" message:[NSString stringWithFormat:@"Number of posts above %lu are %lu", score, [posts count]] delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alert show];
     }];
+}
+- (IBAction)clearAllTapped:(id)sender
+{
+    [self.postDataController clearAll];
 }
 @end

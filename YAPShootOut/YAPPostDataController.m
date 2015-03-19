@@ -85,4 +85,11 @@
         completion(posts);
     }];
 }
+
+- (void)clearAll
+{
+    [self.rwconnection asyncReadWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
+        [transaction removeAllObjectsInCollection:@"posts"];
+    }];
+}
 @end
