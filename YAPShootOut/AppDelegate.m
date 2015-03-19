@@ -7,16 +7,30 @@
 //
 
 #import "AppDelegate.h"
+#import "YapDatabase.h"
+
+#import "ShootOutViewController.h"
+
+#import "YAPPostDataController.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) YapDatabase *database;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *dbpath = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"yap.db"];
+    YapDatabase *db = [[YapDatabase alloc] initWithPath:dbpath];
+    
+    YAPPostDataController *dc = [[YAPPostDataController alloc]initWithDatabase:db];
+    
+    ShootOutViewController *soVc = (ShootOutViewController *) self.window.rootViewController;
+    soVc.postDataController = dc;
+    
     return YES;
 }
 

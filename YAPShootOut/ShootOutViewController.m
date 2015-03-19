@@ -6,14 +6,14 @@
 //  Copyright (c) 2015 Synapptic Labs. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ShootOutViewController.h"
 #import "PostParser.h"
 
-@interface ViewController ()
+@interface ShootOutViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ShootOutViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,7 +23,7 @@
 {
     PostParser *parser = [[PostParser alloc]init];
     NSTimeInterval time = [parser parsePostsWithPostCallBack:^(NSDictionary *post) {
-        //Do import here
+        [self.postDataController importPost:post];
     }];
     NSLog(@"Seconds to complete importing, %f", time);
 }
